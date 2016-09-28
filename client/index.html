@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"\>
+	<title>LiveSync DEMO</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/css-mint/1.4.3/css-mint.min.css">
+	<style>
+	    #op_buttons{
+	   		width: 100%;
+	   		height: 100%; 
+		}
+ 	</style>
+ 	<script src="https://www.youtube.com/iframe_api"></script>
+ 	<script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+ 	<script src="keyboard.js"></script>
+  	<script src="client.js"></script>
+</head>
+<body>
+	<!-- Informações iniciais -->
+	<div id="main-info" class="align-center gr-row">
+        <div class="card info col-span-2">
+        	You can add new videos to this channel and enhance everyone experience, with the <b>ADD VIDEO BUTTON</b>
+    	</div>
+    	<div class="card info col-span-2">
+        	Or you can synchronize the videos using a simple method of playing and pausing them;
+    	</div>
+    	<div class="card info col-span-2">
+        	Or just select two Video and have fun! </br>:)
+    	</div>
+    </div>
+    <div class="card info col-span-6">
+    IDs for testing without live streams (OBAMA IDs): CnvUUauFJ98  |  YBv4-TCs3Lg   |  jJfGx4G8tjo   |  -RKE_xouTkw
+    </div>
+    <!-- Infromações na fase de sincronização -->
+    <div id="sync-info" class="card info col-span-6">
+    	To synchronize videos, use the buttons on top of the players, or press the keyboard buttons <b>1</b> and <b>2</b>.
+    	Play and pause the vídeos so they are presented synchronized and press <b>DONE</b>. If they are already sunchronized, just press <b>DONE</b>
+    </div>
+    <!-- Mensagens auxiliars -->
+    <p id="msg_field"></p>
+    <!-- Botões e seletores de vídeo -->
+    <div id="op_buttons" class="align-center gr-row">
+    		<button id='b_add' class="btn default">ADD NEW VIDEO</button>
+			<button id='b_sync' class="btn default">SYNC VIDEOS</button>
+			<button id='b_done'class="btn default">DONE</button>
+		<div id="video_area">
+			<div id="video1" class="card pricing col-span-3">
+				<button id='b_play1' class="btn default">PLAY1 (1)</button>
+				<button id='b_pause1' class="btn default">PAUSE1 (1)</button>
+				<div id="video1area"></div>
+				<div id="selector1">
+					<h6>Select a Video Stream:</h6>
+				</div>
+			</div>
+			<div id="video2" class="card pricing col-span-3">
+				<button id='b_play2' class="btn default">PLAY2 (2)</button>
+				<button id='b_pause2' class="btn default">PAUSE2 (2)</button>
+				<div id="video2area"></div>
+				<div id="selector2">
+					<h6>Select a Video Stream:</h6>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

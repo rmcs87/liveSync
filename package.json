@@ -1,0 +1,13 @@
+{
+  "name": "live-sync",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "repository": "",
+  "author": "Ricardo Mendes <rmcs87@gmail.com>",
+  "dependencies": {
+    "async": "~0.2.8",
+    "express": "~3.2.4",
+    "socket.io": "~1.0"
+  }
+}
